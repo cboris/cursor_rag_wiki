@@ -19,7 +19,7 @@ Limitations: it got difficulties to retrieve using LLM/RAG approach poorly struc
 ## Prerequisites
 
 - Python 3.8+
-- Confluence Cloud account with API access
+- Confluence  account with API access
 - Local LLM (e.g., Ollama with Llama2)
 - Internet connection for Confluence API access
 
