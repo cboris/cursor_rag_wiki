@@ -238,7 +238,7 @@ def create_enhanced_chunks(self, content):
             'text': chunk['text'],
             'page_title': chunk['page_title'],
             'page_title_embedding': self.embed_page_title(chunk['page_title']),
-            'entities': self.extract_entities(chunk['text']),  # Richard Chan, projects, etc.
+            'entities': self.extract_entities(chunk['text']),  # projects, etc.
             'chunk_type': self.classify_chunk(chunk['text'])   # table, list, paragraph
         }
         chunks.append(enhanced_chunk)
@@ -316,7 +316,7 @@ For your specific use case (Confluence with tables, people, and short page title
 3. Keep semantic search as fallback
 This gives you:
 ✅ Reliable page title matching for "find Delegations page"
-✅ Entity-based search for "Richard Chan tasks"
+✅ Entity-based search for "Richard  tasks"
 ✅ Table-aware chunking for delegation data
 ✅ Semantic fallback for complex queries
 Would you like me to implement one of these approaches? Which one interests you most? 🚀
